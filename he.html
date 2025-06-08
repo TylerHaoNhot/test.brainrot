@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>💖 BRAIN ROT MODE 💖</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffccff, #ccffff);
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      text-align: center;
+      padding: 50px;
+      color: #ff66cc;
+      animation: spin 10s linear infinite;
+    }
+
+    h1 {
+      font-size: 4rem;
+      text-shadow: 2px 2px #ff99ff;
+      animation: rainbow 2s infinite;
+    }
+
+    @keyframes rainbow {
+      0% { color: #ff66cc; }
+      25% { color: #66ccff; }
+      50% { color: #99ffcc; }
+      75% { color: #ffcc99; }
+      100% { color: #ff66cc; }
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .sparkles {
+      font-size: 2rem;
+      animation: sparkle 1s infinite;
+    }
+
+    @keyframes sparkle {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.2; }
+    }
+
+    .btn {
+      background-color: #ffccff;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.5rem;
+      border-radius: 25px;
+      box-shadow: 0 0 15px #ff99cc;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.1) rotate(10deg);
+      background-color: #fff0f5;
+    }
+
+    .floating-kitty {
+      position: fixed;
+      top: 10%;
+      left: 10%;
+      width: 80px;
+      animation: floaty 6s ease-in-out infinite alternate;
+    }
+
+    @keyframes floaty {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(100px, 100px); }
+    }
+  </style>
+</head>
+<body>
+  <img src="https://media.tenor.com/LaVjI6gfsfUAAAAi/kawaii-hello.gif" alt="kawaii kitty" class="floating-kitty">
+  <h1>💗 BRAIN ROT CENTRAL 💗</h1>
+  <p class="sparkles">✨✨ sparkly thoughts only ✨✨</p>
+  <button class="btn" onclick="alert('NYAAA~ 🥺💘')">Click for Brain Rot 💫</button>
+  <audio autoplay loop>
+    <source src="https://files.catbox.moe/2b1e6m.mp3" type="audio/mpeg">
+    Your browser does not support the audio element~
+  </audio>
+</body>
+</html>
